@@ -5,6 +5,9 @@ const cardigueDiv = document.querySelector(".cardigueDiv");
 
 const btnLiqui = document.querySelector(".btnLiqui");
 
+const audio1 = document.querySelector(".audio1");
+const audio2 = document.querySelector(".audio2");
+
 const body = document.querySelector("body");
 
 var num1 = 0;
@@ -81,6 +84,8 @@ function clicarOruam() {
 function verificar() {
   if (num1 >= 1 && num2 >= 1) {
     btnLiqui.classList.add('fade');
+    audio2.style.visibility = "visible";
+    audio1.style.visibility = "visible";
   }
 }
 function clicarLiqui() {
