@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardiguê</title>
+</head>
+
+<body>
+
+    
+    <button class="btnPlay" onclick="playVideo()"><img class="imgDaviChorando" src="daviChorando.png" alt=""></button>
+    <br>
+
+
+    <video class="video">
+        <source src="Video.mp4" type="video/mp4">
+    </video>
+
+
+
+    <script>
+        function playVideo() {
+            var video = document.querySelector(".video");
+            video.muted = false;
+            video.play();
+        }
+    </script>
+
+   
+    <style>
+        body {
+            text-align: center;
+            align-items: center;
+        }
+
+        .imgDaviChorando {
+            width: 90px;
+            height: auto;
+            margin: 2px;
+        }
+
+        .btnPlay {
+            
+            width: 120px;
+            height: auto;
+            box-shadow: 1px 1px 4px black;
+            background-color: rgb(255, 244, 147);
+            transition: 200ms ease-in-out;
+            cursor: pointer;
+            margin-bottom: 7px;
+        }
+
+        .btnPlay:hover {
+            transform: scale(1.1);
+            transition: 200ms ease-in-out;
+        }
+
+        .video {
+            height: 400px;
+            width: auto;
+            border: 2px black solid;
+            box-shadow: 5px 5px 7px black;
+        }
+    </style>
+
+</body>
+
+</html>

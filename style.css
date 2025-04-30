@@ -17,6 +17,7 @@
     background-color: rgb(255, 244, 147);
     transition: 200ms ease-in-out;
     margin: 10px;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -43,7 +44,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     align-content: center;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     position: relative;
 }
 
@@ -81,3 +82,18 @@ p {
 .cardigueDiv.fade {
     opacity: 1;
 }
+
+/*imagem do link*/
+
+.imgLink{
+    width: 70px;
+    height: 70px;
+    box-shadow: 1px 1px 4px black;
+    border: 2px black solid;
+    transition: 300ms ease-in-out;
+}
+.imgLink:hover{
+    transform: scale(1.1);
+    transition: 300ms ease-in-out;
+}
+
